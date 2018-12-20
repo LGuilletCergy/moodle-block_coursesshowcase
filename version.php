@@ -30,6 +30,6 @@
  *
  */
 
-$plugin->version = 2018122000;
+$plugin->version = 2018122001;
 $plugin->requires = 2015051100;
 $plugin->component = 'block_coursesshowcase';

@@ -32,8 +32,8 @@
 
 $string['pluginname'] = 'Courses showcase block';
 $string['shortcuts'] = 'Short cuts';
-$string['mytermcourses:addinstance'] = 'Add a new Courses showcase block';
-$string['mytermcourses:myaddinstance'] = 'Add a new Courses showcase block to the Dashboard';
+$string['coursesshowcase:addinstance'] = 'Add a new Courses showcase block';
+$string['coursesshowcase:myaddinstance'] = 'Add a new Courses showcase block to the Dashboard';
 $string['parameters'] = 'Course parameters';
 $string['details'] = 'Course details';
 $string['content'] = 'Course content';

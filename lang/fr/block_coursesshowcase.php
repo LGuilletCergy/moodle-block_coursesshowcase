@@ -32,8 +32,8 @@
 
 $string['pluginname'] = 'Bloc vitrine des cours';
 $string['shortcuts'] = 'Raccourcis';
-$string['mytermcourses:addinstance'] = 'Ajouter un nouveau bloc vitrine des cours';
-$string['mytermcourses:myaddinstance'] = 'Ajouter un nouveau bloc vitrine des cours à mon tableau de bord';
+$string['coursesshowcase:addinstance'] = 'Ajouter un nouveau bloc vitrine des cours';
+$string['coursesshowcase:myaddinstance'] = 'Ajouter un nouveau bloc vitrine des cours à mon tableau de bord';
 $string['parameters'] = 'Paramètres du cours';
 $string['details'] = 'Détails du cours';
 $string['content'] = 'Contenu du cours';
