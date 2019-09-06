@@ -122,7 +122,7 @@ class checkcohorts extends \core\task\scheduled_task {
 
         global $DB;
 
-        if (!$DB->get_record('record_exists', array('cohortid' => $cohortid, 'userid' => $user->id))) {
+        if (!$DB->record_exists('cohort_members', array('cohortid' => $cohortid, 'userid' => $user->id))) {
 
             $member = new \stdClass();
             $member->cohortid = $cohortid;
