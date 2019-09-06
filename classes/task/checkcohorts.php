@@ -40,7 +40,7 @@ require_once($CFG->libdir .'/accesslib.php');
 class checkcohorts extends \core\task\scheduled_task {
 
     public function get_name() {
-        
+
         return get_string('checkcohorts', 'block_coursesshowcase');
     }
 
@@ -101,6 +101,9 @@ class checkcohorts extends \core\task\scheduled_task {
                                 //~ $vetcode = $xmlenrolment->getAttribute('CodeEtape');
                                 //~ $ufrcode = substr($vetcode, 0, 1);
                                 //~ echo "$vetcode<br>";
+
+                                // Peut-être à LAURENTHACK pour ne pas hardcoder les id des cohortes.
+
                                 $ufrcode = substr($longufrcode, 0, 1);
                                 if ($ufrcode == '4') {
 
