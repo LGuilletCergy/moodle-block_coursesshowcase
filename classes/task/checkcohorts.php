@@ -70,8 +70,6 @@ class checkcohorts extends \core\task\scheduled_task {
 
             $user = $DB->get_record('user', array('username' => $studentuid, 'email' => $email));
             if ($user) {
-
-                print_object($universityyears);
                 foreach ($universityyears as $universityyear) {
 
                     if ($universityyear->nodeType !== 1 ) {
@@ -123,9 +121,8 @@ class checkcohorts extends \core\task\scheduled_task {
     private function ufrcohort($user, $cohortid) {
 
         global $DB;
-        $cohortmember = $DB->get_record('cohort_members', array('cohortid' => $cohortid, 'userid' => $user->id));
 
-        if (!$cohortmember) {
+        if (!$DB->get_record('record_exists', array('cohortid' => $cohortid, 'userid' => $user->id))) {
 
             $member = new \stdClass();
             $member->cohortid = $cohortid;
